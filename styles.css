@@ -1,10 +1,13 @@
+body{
+    margin: auto;
+}
 .subheadline{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     color: #98A684;
     font-size: 14px;
-    margin: auto;
+    padding: 0;
 }
 
 
@@ -28,6 +31,7 @@
     font-family: 'Cardo', serif;
     font-size: 60px;
     font-weight: 400;
+    margin: auto;
 }
 
 .wedding-title::after, .wedding-title::before{
@@ -58,6 +62,53 @@
 .wedding-list span{
     color: black;
 }
+
+.locations-container{
+    background-color:#98a68475 ;
+    display: flex;
+    justify-content: center;
+    padding: 5% 15%;
+    background-image: url("http://placekitten.com/1000/1000");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.locations-text{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding: 5%;
+}
+
+.locations-text h2,p{
+    text-align: left;
+}
+
+.locations-text h2{
+    font-family: 'Cardo', serif;
+    font-size: 60px;
+    font-weight: 400;
+    margin: auto;
+}
+.locations-text p{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+.locations-img {
+    width: 50% ;
+    background-image: url("http://placekitten.com/1000/1000");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 
 
 
