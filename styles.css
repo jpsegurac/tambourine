@@ -1,3 +1,4 @@
+/* global classes */
 body{
     margin: auto;
 }
@@ -6,18 +7,24 @@ body{
     font-weight: 500;
     text-transform: uppercase;
     color: #98A684;
+    letter-spacing: 0.35px;
     font-size: 14px;
     padding: 0;
 }
 
-
+/* service section classes */
 .services-container{
     margin: auto;
     width: 60%;
     flex-flow: column wrap;
+    padding: 10% 0;
 }
 
-.services-container h2, p{
+.services-container h2{
+    text-align: center;
+    padding: 15px ;
+}
+.services-container p{
     text-align: center;
     padding: 15px ;
 }
@@ -63,12 +70,26 @@ body{
     color: black;
 }
 
+
+/* locations section classes */
 .locations-container{
-    background-color:#98a68475 ;
+    height: 100vh;
+    
+    background-image: url("http://placekitten.com/1001/1001");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.filter-img{  
+    position: relative;
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    padding: 5% 15%;
-    background-image: url("http://placekitten.com/1000/1000");
+    flex-wrap: wrap;  
+    padding: 15vh 15vw;
+    backdrop-filter: brightness(0.8) hue-rotate(30deg); /* Adjust the values as needed */
+  background-color:  rgba(152, 166, 132, 0.5);
+}
+.carousel-item{
+    background-image: url("http://placekitten.com/1001/1001");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -79,24 +100,33 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
+    width: 50%;
     padding: 5%;
+    position: relative;
+}
+.location-buttons{
+    position: absolute;
+    width: 25%;
+    height: 40px;
+    display: flex;
+    bottom: 60px;
+    right: 60px;
+
 }
 
-.locations-text h2,p{
-    text-align: left;
-}
 
 .locations-text h2{
     font-family: 'Cardo', serif;
     font-size: 60px;
     font-weight: 400;
-    margin: auto;
+    text-align: left;
+    margin: 0 0;
 }
 .locations-text p{
     font-family: 'Source Sans 3', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    text-align: left;
     
 }
 
@@ -108,7 +138,80 @@ body{
 }
 
 
+/* foods section classes */
 
+.foods-containeru{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10% 12.5% ;
+    height: 60%;
+}
 
+.foods-img {
+    width: 37.5% ;
+    background-image: url("http://placekitten.com/720/598");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.foods-text{
+    box-shadow: 20px 10px 50px #0000002F;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 37.5%;
+    text-align: left;
+    padding: 105px 105px 105px 105px;
+}
+
+.foods-button{
+    height: 54px;
+    width: 223px;
+    background-color: #98A684;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+}
+
+.foods-text h2{
+    font-family: 'Cardo', serif;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: left;
+    margin: auto 0;
+}
+.foods-text p{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    line-height:200%;
+    
+}
+
+/* Small screens (576px and below) */
+@media (max-width: 1480px) {
+    .foods-img {
+        width: 0%;
+    }
+    .foods-text{
+        width: 100%;
+    }
+    /* Your CSS styles for small screens go here */
+  }
+  
+  /* Medium screens (768px and below) */
+  @media (max-width: 768px) {
+    .locations-img {
+        width: 0%;
+    }
+    .locations-text{
+        width: 100%;
+    }
+    
+    /* Your CSS styles for medium screens go here */
+  }
+  
+ 
 
